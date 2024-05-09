@@ -1,0 +1,29 @@
+/* NOTE:
+This is a CSS helper file in which I will be creating custom styles to modify the behaviour of some bootstrap classes in my program.
+ */
+
+/* user agent stylesheet reset */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* local variables */
+
+:root {
+  --primary: #023047;
+  --secondary: #8ecae6;
+  --tertiary: #219ebc;
+  --accent: #fb8500;
+  --dark-text: #05050e;
+  --light-text: #eee6e8;
+}
+
+.testimonial-images{
+    width: 400px;
+    aspect-ratio: 1/1   ;
+}
