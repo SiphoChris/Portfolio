@@ -23,7 +23,41 @@ This is a CSS helper file in which I will be creating custom styles to modify th
   --light-text: #eee6e8;
 }
 
-.testimonial-images{
-    width: 400px;
-    aspect-ratio: 1/1   ;
+/* styling */
+
+body{
+    background-color: var(--light-text);
 }
+
+/* header{
+    background-color: var(--tertiary);
+} */
+
+.nav-link:hover{
+    color: var(--accent);
+}
+.nav-link:active{
+    color: var(--accent);
+}
+.testimonial-images {
+  width: 400px;
+  aspect-ratio: 1/1;
+}
+
+.hero-section{
+    background-color: var(--primary);
+    color: var(--light-text);
+}
+
+.contact-section{
+    background-color: var(--accent);
+}
+
+.card{
+    border: 2px solid var(--accent);
+}
+
+/* .about-section,
+.resume-section{
+    background-color: var(--tertiary);
+} */

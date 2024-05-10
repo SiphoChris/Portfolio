@@ -37,10 +37,10 @@
   </head>
   <body>
     <header>
-        <!-- navbar -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="#HOME">
             <img
               src="https://siphochris.github.io/images/images/portfolio_images/myLogo.png"
               alt="Logo"
@@ -63,12 +63,12 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="#">HOME</a>
-              <a class="nav-link" href="#">ABOUT</a>
-              <a class="nav-link" href="#">RESUME</a>
-              <a class="nav-link" href="#">SKILLS</a>
-              <a class="nav-link" href="#">PROJECTS</a>
-              <a class="nav-link" href="#">TESTIMONIALS</a>
-              <a class="nav-link" href="#">REACH ME</a>
+              <a class="nav-link" href="#ABOUT">ABOUT</a>
+              <a class="nav-link" href="#RESUME">RESUME</a>
+              <a class="nav-link" href="#SKILLS">SKILLS</a>
+              <a class="nav-link" href="#PROJECTS">PROJECTS</a>
+              <a class="nav-link" href="#TESTIMONIALS">TESTIMONIALS</a>
+              <a class="nav-link" href="#CONTACT">REACH ME</a>
             </div>
           </div>
         </div>
@@ -96,8 +96,8 @@
       </section>
     </header>
     <main>
-        <!-- about section -->
-      <section class="about-section mb-5">
+      <!-- about section -->
+      <section class="about-section my-5" id="ABOUT">
         <div class="container">
           <div class="card w-90 mb-3">
             <div class="card-body text-center p-5">
@@ -113,10 +113,10 @@
             </div>
           </div>
         </div>
-        <p class="h2 text-center my-5">Resume</p>
       </section>
       <!-- resume section -->
-      <section class="resume-section">
+      <section class="resume-section" id="RESUME">
+        <p class="h2 text-center my-5">Resume</p>
         <div class="container mb-5">
           <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
@@ -170,66 +170,35 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseThree"
-                  aria-expanded="false"
-                  aria-controls="flush-collapseThree"
-                >
-                  wwdedeeef
-                </button>
-              </h2>
-              <div
-                id="flush-collapseThree"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionFlushExample"
-              >
-                <div class="accordion-body">
-                  Placeholder content for this accordion, which is intended to
-                  demonstrate the <code>.accordion-flush</code> class. This is
-                  the third item's accordion body. Nothing more exciting
-                  happening here in terms of content, but just filling up the
-                  space to make it look, at least at first glance, a bit more
-                  representative of how this would look in a real-world
-                  application.
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
-        <p class="h2 text-center">Skills</p>
-        <!-- skills section -->
-        <section class="skills-section">
-          <div class="container">
-            <ul class="list-group">
-              <li class="list-group-item active h3" aria-current="true">
-                Technologies
-              </li>
-              <li class="list-group-item">JavaScript</li>
-              <li class="list-group-item">HTML</li>
-              <li class="list-group-item">CSS</li>
-              <li class="list-group-item">Bootstrap</li>
-            </ul>
-            <ul class="list-group">
-              <li class="list-group-item active h3" aria-current="true">
-                Tools
-              </li>
-              <li class="list-group-item">Git</li>
-              <li class="list-group-item">Github</li>
-              <li class="list-group-item">VS Code</li>
-              <li class="list-group-item">Vercel</li>
-              <li class="list-group-item">Netlify</li>
-            </ul>
-          </div>
-        </section>
+      <!-- skills section -->
+      <section class="skills-section" id="SKILLS">
+        <p class="h2 text-center mb-5">Skills</p>
+        <div class="container">
+          <ul class="list-group">
+            <li class="list-group-item active h3" aria-current="true">
+              Technologies
+            </li>
+            <li class="list-group-item">JavaScript</li>
+            <li class="list-group-item">HTML</li>
+            <li class="list-group-item">CSS</li>
+            <li class="list-group-item">Bootstrap</li>
+          </ul>
+          <ul class="list-group mt-5">
+            <li class="list-group-item active h3" aria-current="true">Tools</li>
+            <li class="list-group-item">Git</li>
+            <li class="list-group-item">Github</li>
+            <li class="list-group-item">VS Code</li>
+            <li class="list-group-item">Vercel</li>
+            <li class="list-group-item">Netlify</li>
+          </ul>
+        </div>
+      </section>
+      <!-- projects section -->
+      <section class="projects-section" id="PROJECTS">
         <p class="h2 text-center my-5">Projects</p>
-        <!-- projects section -->
-        <section class="projects-section">
         <div class="container">
           <div class="row gy-4">
             <div class="col-sm-6 mb-3 mb-sm-0">
@@ -237,24 +206,43 @@
                 <div class="card-body">
                   <h5 class="card-title">Hulu App Clone</h5>
                   <p class="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
+                    This was my take trying to clone the big app Hulu.
                   </p>
-                  <a href="#" class="btn btn-success">View live</a>
-                  <a href="#" class="btn btn-primary">See repository</a>
+                  <a
+                    target="_blank"
+                    href="https://hulu-clone-mu-ashen.vercel.app/"
+                    class="btn btn-success"
+                    >Vercel</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://github.com/SiphoChris/Hulu_clone.git"
+                    class="btn btn-primary"
+                    >Github</a
+                  >
                 </div>
               </div>
             </div>
             <div class="col-sm-6 mb-3 mb-sm-0">
               <div class="card text-center">
                 <div class="card-body">
-                  <h5 class="card-title">Keyboard</h5>
+                  <h5 class="card-title">Keyboard App</h5>
                   <p class="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
+                    I used grid and flexbox layout design to create a this
+                    keyboard app.
                   </p>
-                  <a href="#" class="btn btn-success">View live</a>
-                  <a href="#" class="btn btn-primary">>See repository</a>
+                  <a
+                    target="_blank"
+                    href="https://keyboard-three-xi.vercel.app/"
+                    class="btn btn-success"
+                    >Vercel</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://github.com/SiphoChris/Keyboard.git"
+                    class="btn btn-primary"
+                    >Github</a
+                  >
                 </div>
               </div>
             </div>
@@ -263,11 +251,22 @@
                 <div class="card-body">
                   <h5 class="card-title">Calculator</h5>
                   <p class="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
+                    I used grid and flexbox layout design to create a this
+                    calculator app. I used these layouts to properly position
+                    the keys.
                   </p>
-                  <a href="#" class="btn btn-success">View live</a>
-                  <a href="#" class="btn btn-primary">See repository</a>
+                  <a
+                    target="_blank"
+                    href="https://calculator-rho-cyan-37.vercel.app/"
+                    class="btn btn-success"
+                    >Vercel</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://github.com/SiphoChris/Calculator.git"
+                    class="btn btn-primary"
+                    >Github</a
+                  >
                 </div>
               </div>
             </div>
@@ -276,11 +275,22 @@
                 <div class="card-body">
                   <h5 class="card-title">Flip Card</h5>
                   <p class="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
+                    In this project I used CSS and HTML to create a card back
+                    and forth on the event that a user hovers over it. I used
+                    CSS transform and &#64;keyframes properties.
                   </p>
-                  <a href="#" class="btn btn-success">View live</a>
-                  <a href="#" class="btn btn-primary">See repository</a>
+                  <a
+                    target="_blank"
+                    href="https://flip-card-self.vercel.app/"
+                    class="btn btn-success"
+                    >Vercel</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://github.com/SiphoChris/flipCard.git"
+                    class="btn btn-primary"
+                    >Github</a
+                  >
                 </div>
               </div>
             </div>
@@ -289,11 +299,21 @@
                 <div class="card-body">
                   <h5 class="card-title">Flex Box Layout</h5>
                   <p class="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
+                    I used primarily the flexbox layout design to create this
+                    card display.
                   </p>
-                  <a href="#" class="btn btn-success">View live</a>
-                  <a href="#" class="btn btn-primary">>See repository</a>
+                  <a
+                    target="_blank"
+                    href="https://flex-box-rosy.vercel.app/"
+                    class="btn btn-success"
+                    >Vercel</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://github.com/SiphoChris/flexBox.git"
+                    class="btn btn-primary"
+                    >>Github</a
+                  >
                 </div>
               </div>
             </div>
@@ -302,20 +322,30 @@
                 <div class="card-body">
                   <h5 class="card-title">Grid Layout</h5>
                   <p class="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
+                    I used primarily the grid layout design to create this image
+                    grid.
                   </p>
-                  <a href="#" class="btn btn-success">View live</a>
-                  <a href="#" class="btn btn-primary">See repository</a>
+                  <a
+                    target="_blank"
+                    href="https://grid-steel.vercel.app/"
+                    class="btn btn-success"
+                    >Vercel</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://github.com/SiphoChris/grid.git"
+                    class="btn btn-primary"
+                    >Github</a
+                  >
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <p class="h2 text-center my-5">Testimonials</p>
       <!-- testimonial section -->
-      <section class="testimonial-section mb-5">
+      <section class="testimonial-section mb-5" id="TESTIMONIALS">
+        <p class="h2 text-center my-5">Testimonials</p>
         <div class="container rounded-4">
           <div class="row">
             <div class="col">
@@ -504,9 +534,48 @@
           </div>
         </div>
       </section>
-      <!-- contact section -->
-      <section class="contact-section">
 
+      <!-- contact section -->
+
+      <section class="contact-section py-3" id="CONTACT">
+        <p class="h2 text-center my-5">Reach Me</p>
+        <div class="container">
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="Full Name"
+            />
+            <label for="floatingInput">Full Name</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingEmail"
+              placeholder="name@example.com"
+            />
+            <label for="floatingEmail">Email</label>
+          </div>
+
+          <div class="form-floating mt-4">
+            <textarea
+              class="form-control"
+              placeholder="Write a message"
+              id="floatingTextarea2"
+              style="height: 100px"
+            ></textarea>
+            <label for="floatingTextarea2">Message</label>
+          </div>
+
+          <div class="hstack gap-3 my-5">
+            <button type="button" class="btn btn-outline-primary btn-lg">
+              Clear
+            </button>
+            <button type="button" class="btn btn-primary btn-lg">Submit</button>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
