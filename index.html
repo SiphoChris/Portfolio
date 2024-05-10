@@ -31,6 +31,10 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- animate on scroll library -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- css link -->
 
     <link rel="stylesheet" href="./css/styles.css" />
@@ -77,18 +81,18 @@
       <section class="hero-section">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-lg-7 col-sm-12">
+            <div class="col-lg-7 col-sm-12" data-aos="fade-right">
               <p class="h1">Hello there</p>
               <p class="h1">My name is Sipho Nkebe</p>
               <p class="h1">I am an aspiring web developer</p>
               <p class="h1">Welcome to my portfolio</p>
             </div>
-            <div class="col-lg-5 col-sm-12 my-4">
+            <div class="col-lg-5 col-sm-12 my-4" data-aos="fade-left">
               <img
                 src="https://siphochris.github.io/images/images/portfolio_images/profile-image.jpg"
                 alt="hero-image"
                 class="img-fluid rounded-4"
-                style="height: 560px"
+                style="height: 560px" loading="lazy"
               />
             </div>
           </div>
@@ -99,7 +103,7 @@
       <!-- about section -->
       <section class="about-section my-5" id="ABOUT">
         <div class="container">
-          <div class="card w-90 mb-3">
+          <div class="card w-90 mb-3" data-aos="flip-up">
             <div class="card-body text-center p-5">
               <h5 class="card-title h3 mb-5">About Me</h5>
               <p class="card-text h5">
@@ -118,7 +122,7 @@
       <section class="resume-section" id="RESUME">
         <p class="h2 text-center my-5">Resume</p>
         <div class="container mb-5">
-          <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion accordion-flush" id="accordionFlushExample" data-aos="flip-up">
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button
@@ -138,9 +142,7 @@
                 data-bs-parent="#accordionFlushExample"
               >
                 <div class="accordion-body">
-                  Placeholder content for this accordion, which is intended to
-                  demonstrate the <code>.accordion-flush</code> class. This is
-                  the first item's accordion body.
+                  National Senior Certificate 2023 (Bachelor pass)
                 </div>
               </div>
             </div>
@@ -163,10 +165,7 @@
                 data-bs-parent="#accordionFlushExample"
               >
                 <div class="accordion-body">
-                  Placeholder content for this accordion, which is intended to
-                  demonstrate the <code>.accordion-flush</code> class. This is
-                  the second item's accordion body. Let's imagine this being
-                  filled with some actual content.
+                  Part time job at a local carwash as a attendent
                 </div>
               </div>
             </div>
@@ -177,7 +176,7 @@
       <section class="skills-section" id="SKILLS">
         <p class="h2 text-center mb-5">Skills</p>
         <div class="container">
-          <ul class="list-group">
+          <ul class="list-group" data-aos="flip-up">
             <li class="list-group-item active h3" aria-current="true">
               Technologies
             </li>
@@ -186,7 +185,7 @@
             <li class="list-group-item">CSS</li>
             <li class="list-group-item">Bootstrap</li>
           </ul>
-          <ul class="list-group mt-5">
+          <ul class="list-group mt-5" data-aos="flip-up">
             <li class="list-group-item active h3" aria-current="true">Tools</li>
             <li class="list-group-item">Git</li>
             <li class="list-group-item">Github</li>
@@ -201,7 +200,7 @@
         <p class="h2 text-center my-5">Projects</p>
         <div class="container">
           <div class="row gy-4">
-            <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="col-sm-6 mb-3 mb-sm-0" data-aos="fade-right">
               <div class="card text-center">
                 <div class="card-body">
                   <h5 class="card-title">Hulu App Clone</h5>
@@ -223,7 +222,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="col-sm-6 mb-3 mb-sm-0" data-aos="fade-left">
               <div class="card text-center">
                 <div class="card-body">
                   <h5 class="card-title">Keyboard App</h5>
@@ -246,7 +245,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="col-sm-6 mb-3 mb-sm-0" data-aos="fade-right">
               <div class="card text-center">
                 <div class="card-body">
                   <h5 class="card-title">Calculator</h5>
@@ -270,7 +269,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="col-sm-6 mb-3 mb-sm-0" data-aos="fade-left">
               <div class="card text-center">
                 <div class="card-body">
                   <h5 class="card-title">Flip Card</h5>
@@ -294,7 +293,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="col-sm-6 mb-3 mb-sm-0" data-aos="fade-right">
               <div class="card text-center">
                 <div class="card-body">
                   <h5 class="card-title">Flex Box Layout</h5>
@@ -317,7 +316,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6" data-aos="fade-left">
               <div class="card text-center">
                 <div class="card-body">
                   <h5 class="card-title">Grid Layout</h5>
@@ -347,7 +346,7 @@
       <section class="testimonial-section mb-5" id="TESTIMONIALS">
         <p class="h2 text-center my-5">Testimonials</p>
         <div class="container rounded-4">
-          <div class="row">
+          <div class="row" data-aos="zoom-in">
             <div class="col">
               <div id="carouselExampleCaptions" class="carousel slide">
                 <div class="carousel-indicators">
@@ -392,7 +391,7 @@
                       loading="lazy"
                       alt="..."
                     />
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption text-warning fw-bold fs-5 d-md-block">
                       <h5>Mr Joel</h5>
                       <p>
                         Hello Sipho, Sipho is a highly creative, well-behaved,
@@ -413,7 +412,7 @@
                       loading="lazy"
                       alt="..."
                     />
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-md-block text-warning fw-bold fs-5">
                       <h5>Keira</h5>
                       <p>
                         I'm delighted to share a testimonial for Sipho Nkebe, a
@@ -442,7 +441,7 @@
                       loading="lazy"
                       alt="..."
                     />
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-md-block text-warning fw-bold fs-5">
                       <h5>Yakupha</h5>
                       <p>
                         Working with Sipho was an absolute pleasure. His
@@ -463,7 +462,7 @@
                       loading="lazy"
                       alt="..."
                     />
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-md-block text-warning fw-bold fs-5">
                       <h5>Zizipho</h5>
                       <p>
                         Sipho is a very remarkable person. His love for new
@@ -486,21 +485,17 @@
                       loading="lazy"
                       alt="..."
                     />
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-md-block text-warning fw-bold fs-5">
                       <h5>Ammy</h5>
                       <p>
-                        Sipho has this vibrant and energetic personality that
-                        lights up any room he enters. He inspires people to
-                        think positively and allows for their creativity to run
-                        wild. He sees things from different perspectives and has
+                        Sipho has a energetic personality that
+                        lightens up any room he enters. He always
+                        thinks positively creatively. He sees things from different perspectives and has
                         an open mind to all opinions. He is respectful, gentle
                         and extends a helping hand, where needed. He is
                         professional, well-mannered and a student of life,
                         forever wanting to learn new things. He is
-                        understanding, patient and well-spoken. Needless to say,
-                        hiring Sipho would be a great investment for your
-                        company. You will surely see a significant return on
-                        investment
+                        understanding, patient and well-spoken.
                       </p>
                     </div>
                   </div>
@@ -585,5 +580,13 @@
         </p>
       </div>
     </footer>
+
+    <!-- aos lib -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
+
   </body>
 </html>
